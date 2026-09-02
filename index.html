@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabores do Brasil — produtos brasileiros em Portugal.">
+  <title>Sabores do Brasil | Produtos Brasileiros em Portugal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-top">
+      <a class="logo" href="index.html"><span>🇧🇷</span> Sabores do Brasil</a>
+      <div class="search"><input id="searchInput" type="search" placeholder="Pesquisar produtos..." aria-label="Pesquisar produtos"><button onclick="searchProducts()">🔎</button></div>
+      <div class="header-actions"><a href="conta.html">👤 Conta</a><a href="favoritos.html">♡ Favoritos</a><a href="carrinho.html">🛒 <span id="cartCount">0</span></a></div>
+    </div>
+    <nav class="nav"><div class="container nav-inner">
+      <a class="active" href="index.html">Início</a><a href="produtos.html">Produtos</a><a href="produtos.html#categorias">Categorias</a><a href="novidades.html">Novidades</a><a href="promocoes.html">Promoções</a><a href="sobre.html">Sobre Nós</a><a href="faq.html">FAQ</a><a href="contactos.html">Contactos</a>
+    </div></nav>
+  </header>
+
+  <main>
+    <section class="hero"><div class="container hero-content">
+      <p class="eyebrow">BRASIL → PORTUGAL</p>
+      <h1>O sabor do Brasil,<br><span>mais perto de si.</span></h1>
+      <p>Produtos brasileiros selecionados para matar a saudade e descobrir novos sabores.</p>
+      <a class="btn" href="produtos.html">Comprar agora</a>
+    </div></section>
+
+    <section class="section container" id="categorias">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORE</p><h2>Categorias em destaque</h2></div><a href="produtos.html">Ver todos →</a></div>
+      <div class="category-grid">
+        <a class="category-card" href="produtos.html?categoria=bebidas"><span>🍹</span><h3>Bebidas</h3><small>Ver produtos →</small></a>
+        <a class="category-card" href="produtos.html?categoria=doces"><span>🍬</span><h3>Doces e Snacks</h3><small>Ver produtos →</small></a>
+        <a class="category-card" href="produtos.html?categoria=mercearia"><span>🛒</span><h3>Mercearia</h3><small>Ver produtos →</small></a>
+        <a class="category-card" href="produtos.html?categoria=molhos"><span>🌶️</span><h3>Molhos e Temperos</h3><small>Ver produtos →</small></a>
+        <a class="category-card" href="produtos.html?categoria=regionais"><span>🇧🇷</span><h3>Produtos Regionais</h3><small>Ver produtos →</small></a>
+        <a class="category-card" href="produtos.html?categoria=kits"><span>🎁</span><h3>Kits e Cestas</h3><small>Ver produtos →</small></a>
+      </div>
+    </section>
+
+    <section class="section featured"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">SELEÇÃO DA CASA</p><h2>Produtos em destaque</h2></div><a href="produtos.html">Ver catálogo →</a></div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-image">🥤</div><span class="tag">Destaque</span><h3>Produto brasileiro</h3><p class="product-category">Bebidas</p><strong>€ 0,00</strong><button class="add-cart" data-name="Produto brasileiro">Adicionar ao carrinho</button></article>
+        <article class="product-card"><div class="product-image">🍫</div><span class="tag">Destaque</span><h3>Doce brasileiro</h3><p class="product-category">Doces e Snacks</p><strong>€ 0,00</strong><button class="add-cart" data-name="Doce brasileiro">Adicionar ao carrinho</button></article>
+        <article class="product-card"><div class="product-image">🌶️</div><span class="tag">Destaque</span><h3>Molho brasileiro</h3><p class="product-category">Molhos e Temperos</p><strong>€ 0,00</strong><button class="add-cart" data-name="Molho brasileiro">Adicionar ao carrinho</button></article>
+        <article class="product-card"><div class="product-image">🎁</div><span class="tag">Destaque</span><h3>Kit Sabores do Brasil</h3><p class="product-category">Kits e Cestas</p><strong>€ 0,00</strong><button class="add-cart" data-name="Kit Sabores do Brasil">Adicionar ao carrinho</button></article>
+      </div>
+    </div></section>
+
+    <section class="benefits"><div class="container benefit-grid">
+      <div><span>🚚</span><h3>Entrega em Portugal</h3><p>Receba a sua encomenda com comodidade.</p></div>
+      <div><span>🛡️</span><h3>Compra segura</h3><p>Tratamos os seus dados com responsabilidade.</p></div>
+      <div><span>🇧🇷</span><h3>Sabores brasileiros</h3><p>Produtos pensados para quem ama o Brasil.</p></div>
+      <div><span>💬</span><h3>Atendimento</h3><p>Estamos disponíveis para ajudar.</p></div>
+    </div></section>
+  </main>
+
+  <div id="toast" class="toast" role="status"></div>
+  <footer id="footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
